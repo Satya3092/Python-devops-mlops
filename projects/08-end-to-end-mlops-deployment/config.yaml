@@ -1,0 +1,24 @@
+# Training configuration - change experiments here, not in code.
+data:
+  path: data/server_failures.csv
+  target: failure
+  features: [cpu_usage, memory_usage, disk_usage, error_count, response_time_ms]
+  test_size: 0.25
+  random_state: 42
+
+model:
+  type: logistic_regression        # logistic_regression | random_forest
+  version: "2.0.0"
+  params:
+    logistic_regression: {max_iter: 1000, C: 1.0}
+    random_forest: {n_estimators: 300, max_depth: 6, random_state: 42}
+
+decision:
+  threshold: 0.3                   # favour recall: a missed failure is expensive
+
+quality_gate:
+  min_recall: 0.80
+  min_roc_auc: 0.90
+
+output:
+  dir: models

@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    image: server-failure-api:2.0.0
+    ports:
+      - "8000:8000"
+    environment:
+      LOG_LEVEL: INFO
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 512M

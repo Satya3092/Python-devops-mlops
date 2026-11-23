@@ -1,0 +1,2 @@
+Welcome to file handling!
+Files let programs remember data after they stop running.

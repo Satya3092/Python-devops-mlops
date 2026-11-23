@@ -1,0 +1,5 @@
+2026-11-20 10:00:02 INFO Request served path=/api/cart ms=80
+2026-11-20 10:00:06 ERROR Upstream 502 path=/api/payments ms=30
+this line is corrupted
+2026-11-20 10:00:11 ERROR Upstream 502 path=/api/payments ms=28
+2026-11-20 10:00:14 INFO Request served path=/api/cart ms=75

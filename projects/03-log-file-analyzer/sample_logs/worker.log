@@ -1,0 +1,7 @@
+2026-11-20 10:00:02 INFO Job started id=881
+2026-11-20 10:00:06 ERROR Upstream 502 from payments
+this line is corrupted and must be counted as BAD
+2026-11-20 10:00:11 ERROR Upstream 502 from payments
+2026-11-20 10:00:14 INFO Job finished id=881
+2026-11-20 10:02:00 WARNING Queue depth 1200
+2026-11-20 10:02:30 INFO Job started id=882

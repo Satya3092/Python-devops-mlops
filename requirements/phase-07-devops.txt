@@ -1,0 +1,2 @@
+# Phase 7 (Days 66-75): DevOps automation
+psutil>=5.9

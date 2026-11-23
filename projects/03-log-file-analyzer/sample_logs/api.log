@@ -1,0 +1,8 @@
+2026-11-20 10:00:01 INFO Request served path=/api/orders ms=120
+2026-11-20 10:00:05 WARNING Slow response path=/api/search ms=1850
+2026-11-20 10:00:09 ERROR Database connection timeout after 5000ms
+2026-11-20 10:00:12 INFO Request served path=/health ms=3
+2026-11-20 10:00:15 INFO Request served path=/api/orders ms=95
+2026-11-20 10:00:31 ERROR Database connection timeout after 4200ms
+2026-11-20 10:01:02 WARNING Cache miss ratio high ratio=0.42
+2026-11-20 10:01:10 INFO Request served path=/api/cart ms=80

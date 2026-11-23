@@ -1,0 +1,9 @@
+# Pinned versions: the model is trained AND served inside the same image,
+# so pickle/joblib compatibility is guaranteed.
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+scikit-learn==1.5.2
+pandas==2.2.3
+numpy==2.1.3
+joblib==1.4.2

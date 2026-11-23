@@ -1,0 +1,9 @@
+# keep the build context small and free of secrets
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.git/
+.env
+models/
+*.ipynb

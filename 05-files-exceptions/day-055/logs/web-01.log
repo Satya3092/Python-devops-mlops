@@ -1,0 +1,5 @@
+2026-11-20 10:00:01 INFO Request served path=/api/orders ms=120
+2026-11-20 10:00:05 WARNING Slow response path=/api/search ms=1850
+2026-11-20 10:00:09 ERROR Database timeout path=/api/orders ms=5000
+2026-11-20 10:00:12 INFO Request served path=/health ms=3
+2026-11-20 10:00:15 INFO Request served path=/api/orders ms=95

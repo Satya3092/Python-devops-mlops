@@ -1,0 +1,38 @@
+# 100 Days of Python: From Beginner to DevOps and MLOps
+# ------------------------------------------------------
+# Do NOT install everything on Day 1. Days 1-65 need only the standard library.
+# Phase-by-phase files live in requirements/ :
+#   pip install -r requirements/phase-07-devops.txt      (Day 66+)
+#   pip install -r requirements/phase-08-api-cloud.txt   (Day 76+)
+#   pip install -r requirements/phase-09-data.txt        (Day 83+)
+#   pip install -r requirements/phase-10-ml.txt          (Day 91+)
+#   pip install -r requirements/phase-11-mlops.txt       (Day 97+)
+# This file installs everything at once (Python 3.10+).
+
+# --- Phase 7: DevOps automation ---
+psutil>=5.9
+
+# --- Phase 8: APIs and cloud ---
+requests>=2.31
+PyYAML>=6.0
+boto3>=1.34
+
+# --- Phase 9: data analysis ---
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+openpyxl>=3.1
+tabulate>=0.9
+
+# --- Phase 10: machine learning ---
+scikit-learn>=1.4
+joblib>=1.3
+
+# --- Phase 11: MLOps ---
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+httpx>=0.27
+
+# --- Testing (projects) ---
+pytest>=8.0

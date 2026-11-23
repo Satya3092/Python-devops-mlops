@@ -1,0 +1,8 @@
+# Phase 11 (Days 97-100): MLOps
+-r phase-10-ml.txt
+-r phase-08-api-cloud.txt
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+httpx>=0.27
+pytest>=8.0

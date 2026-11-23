@@ -1,0 +1,5 @@
+# Phase 8 (Days 76-82): APIs, YAML and AWS
+-r phase-07-devops.txt
+requests>=2.31
+PyYAML>=6.0
+boto3>=1.34

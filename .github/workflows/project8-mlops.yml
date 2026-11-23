@@ -1,0 +1,48 @@
+name: project8-mlops
+
+on:
+  push:
+    paths: ["projects/08-end-to-end-mlops-deployment/**", ".github/workflows/project8-mlops.yml"]
+  pull_request:
+    paths: ["projects/08-end-to-end-mlops-deployment/**"]
+
+defaults:
+  run:
+    working-directory: projects/08-end-to-end-mlops-deployment
+
+jobs:
+  train-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - name: Train with quality gate
+        run: python train.py --config config.yaml
+      - name: Tests (data, model, API)
+        run: pytest -q
+      - uses: actions/upload-artifact@v4
+        with:
+          name: model-metrics
+          path: projects/08-end-to-end-mlops-deployment/models/metrics.json
+
+  docker:
+    needs: train-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t server-failure-api:${{ github.sha }} .
+      - name: Run container
+        run: docker run -d --name sfa -p 8000:8000 server-failure-api:${{ github.sha }}
+      - name: Smoke test
+        run: |
+          pip install requests
+          BASE_URL=http://127.0.0.1:8000 python smoke_test.py
+      - name: Container logs
+        if: always()
+        run: docker logs sfa
+      # - name: Push to GHCR / ECR here (login with OIDC, then docker push)

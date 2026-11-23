@@ -1,0 +1,60 @@
+2026-11-20 10:00:00 ERROR [10.0.0.5] Database connection timeout after 2418ms
+2026-11-20 10:00:07 WARNING [10.0.0.7] Disk usage at 91%
+2026-11-20 10:01:14 INFO [10.0.1.12] Deployment v1.2 started
+2026-11-20 10:01:21 WARNING [192.168.1.20] Slow response GET /api/products 1526ms
+2026-11-20 10:02:28 INFO [10.0.0.5] User login successful user=alice
+2026-11-20 10:02:35 INFO [10.0.0.7] Deployment v1.5 started
+2026-11-20 10:03:42 ERROR [10.0.1.12] GET /api/payments 500 256ms
+2026-11-20 10:03:49 WARNING [192.168.1.20] Slow response GET /api/products 1704ms
+2026-11-20 10:04:56 INFO [10.0.0.5] Health check passed
+2026-11-20 10:04:03 WARNING [10.0.0.7] High memory usage 86%
+2026-11-20 10:05:10 ERROR [10.0.1.12] Database connection timeout after 844ms
+2026-11-20 10:05:17 ERROR [192.168.1.20] Failed login user=dave
+2026-11-20 10:06:24 ERROR [10.0.0.5] Database connection timeout after 2569ms
+2026-11-20 10:06:31 ERROR [10.0.0.7] Database connection timeout after 1314ms
+2026-11-20 10:07:38 INFO [10.0.1.12] Health check passed
+2026-11-20 10:07:45 ERROR [192.168.1.20] GET /api/payments 500 1239ms
+2026-11-20 10:08:52 INFO [10.0.0.5] Cache refreshed in 977ms
+2026-11-20 10:08:59 INFO [10.0.0.7] User login successful user=bob
+2026-11-20 10:09:06 WARNING [10.0.1.12] Disk usage at 86%
+2026-11-20 10:09:13 WARNING [192.168.1.20] High memory usage 87%
+2026-11-20 10:10:20 ERROR [10.0.0.5] Database connection timeout after 1502ms
+2026-11-20 10:10:27 INFO [10.0.0.7] Health check passed
+2026-11-20 10:11:34 INFO [10.0.1.12] GET /api/orders 200 2057ms
+2026-11-20 10:11:41 WARNING [192.168.1.20] Slow response GET /api/products 2879ms
+2026-11-20 10:12:48 INFO [10.0.0.5] User login successful user=alice
+2026-11-20 10:12:55 INFO [10.0.0.7] Cache refreshed in 1495ms
+2026-11-20 10:13:02 INFO [10.0.1.12] GET /api/orders 200 2297ms
+2026-11-20 10:13:09 INFO [192.168.1.20] Deployment v1.0 started
+2026-11-20 10:14:16 WARNING [10.0.0.5] Slow response GET /api/products 2216ms
+2026-11-20 10:14:23 INFO [10.0.0.7] User login successful user=bob
+2026-11-20 10:15:30 INFO [10.0.1.12] Health check passed
+2026-11-20 10:15:37 WARNING [192.168.1.20] High memory usage 89%
+2026-11-20 10:16:44 WARNING [10.0.0.5] High memory usage 95%
+2026-11-20 10:16:51 INFO [10.0.0.7] Deployment v1.6 started
+2026-11-20 10:17:58 WARNING [10.0.1.12] Slow response GET /api/products 939ms
+2026-11-20 10:17:05 INFO [192.168.1.20] Health check passed
+2026-11-20 10:18:12 WARNING [10.0.0.5] High memory usage 85%
+2026-11-20 10:18:19 WARNING [10.0.0.7] High memory usage 87%
+2026-11-20 10:19:26 INFO [10.0.1.12] GET /api/orders 200 1988ms
+2026-11-20 10:19:33 WARNING [192.168.1.20] High memory usage 89%
+2026-11-20 10:20:40 WARNING [10.0.0.5] High memory usage 97%
+2026-11-20 10:20:47 ERROR [10.0.0.7] GET /api/payments 500 1352ms
+2026-11-20 10:21:54 WARNING [10.0.1.12] Slow response GET /api/products 898ms
+2026-11-20 10:21:01 INFO [192.168.1.20] Cache refreshed in 1266ms
+2026-11-20 10:22:08 INFO [10.0.0.5] Deployment v1.8 started
+2026-11-20 10:22:15 INFO [10.0.0.7] Health check passed
+2026-11-20 10:23:22 INFO [10.0.1.12] Cache refreshed in 499ms
+2026-11-20 10:23:29 INFO [192.168.1.20] Health check passed
+2026-11-20 10:24:36 ERROR [10.0.0.5] Database connection timeout after 1644ms
+2026-11-20 10:24:43 ERROR [10.0.0.7] GET /api/payments 500 867ms
+2026-11-20 10:25:50 INFO [10.0.1.12] Cache refreshed in 49ms
+2026-11-20 10:25:57 INFO [192.168.1.20] User login successful user=dave
+2026-11-20 10:26:04 INFO [10.0.0.5] User login successful user=alice
+2026-11-20 10:26:11 INFO [10.0.0.7] GET /api/orders 200 746ms
+2026-11-20 10:27:18 WARNING [10.0.1.12] Disk usage at 93%
+2026-11-20 10:27:25 INFO [192.168.1.20] User login successful user=dave
+2026-11-20 10:28:32 ERROR [10.0.0.5] Database connection timeout after 724ms
+2026-11-20 10:28:39 INFO [10.0.0.7] Health check passed
+2026-11-20 10:29:46 INFO [10.0.1.12] Cache refreshed in 1390ms
+2026-11-20 10:29:53 ERROR [192.168.1.20] Database connection timeout after 624ms

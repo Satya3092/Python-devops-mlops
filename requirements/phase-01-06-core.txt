@@ -1,0 +1,3 @@
+# Phases 1-6 (Days 1-65): standard library only - nothing to install!
+# Optional: pytest for the project tests
+pytest>=8.0
